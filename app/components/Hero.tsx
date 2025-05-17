@@ -3,7 +3,7 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './TextGenerateEffect'
 import MagicButton from './MagicButton'
 import { FaLocationArrow } from "react-icons/fa6";
-
+import { Typewriter } from 'react-simple-typewriter'
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
@@ -14,7 +14,7 @@ const Hero = () => {
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
         />
-         <Spotlight
+        <Spotlight
           className="h-[80vh] w-[50vw] top-10 left-full"
           fill="purple"
         />
@@ -36,7 +36,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            Code. Learn. Innovate.
           </p>
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
@@ -44,12 +44,23 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Atish, a Full-Stack Developer.
+            Hi! I&apos;m Atish Ranjan —{' '}
+            <span className="text-purple font-semibold">
+              <Typewriter
+                words={['Full-Stack Developer', 'Machine Learning Enthusiast', 'Competitive Programmer']}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={80}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
+            </span>
           </p>
 
-          <a href="#about">
+          <a href="https://drive.google.com/file/d/1f6GymtB1EqUHMl000dhWXKfmKHns3f4t/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             <MagicButton
-              title="Show my work"
+              title="View My Resume"
               icon={<FaLocationArrow />}
               position="right"
             />
