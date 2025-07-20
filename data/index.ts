@@ -102,6 +102,14 @@ export const navItems = [
   ];
   export const projects = [
     {
+      id:5,
+      title:"AI Course Generator",
+      des:"An AI-driven platform for rapid and personalized course creation.",
+      img:"/p5.png",
+      iconLists:["/next.svg" ,"/gemini.svg","/postgresql.svg"],
+      link:"https://ai-course-generator-atish57s.vercel.app/",
+    },
+    {
       id: 1,
       title: "Tomato- Food-Delivery Website",
       des: "A robust food ordering platform with dual user and admin interfaces using React.js",

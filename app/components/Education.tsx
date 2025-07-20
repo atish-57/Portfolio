@@ -23,6 +23,7 @@ export function Education() {
                 "Cloud Computing",
                 "OOP",
                 "DBMS",
+                "System Design",
                 "Data Structures",
                 "Computer Networks",
               ].map((subject) => (
